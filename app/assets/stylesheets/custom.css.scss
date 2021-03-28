@@ -1,0 +1,50 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+  background-color: black !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  color: white !important;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 25px;
+  background-color: grey;
+}
+
+#first_pic {
+  background-image: asset-url('lightning.jpg');
+  height: 533px;
+}
+
+#second_pic {
+  background-image: asset-url('trees.jpg');
+  height: 533px;
+}
+
+#third_pic {
+  background-image: asset-url('ship.png');
+  height: 533px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: grey;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
