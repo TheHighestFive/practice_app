@@ -56,3 +56,18 @@ body {
 #sticky-footer {
   flex-shrink: none;
 }
+
+#card-header {
+  background-color: #000000;
+  color: #9a9a9a;
+  font-style: italic;
+}
+
+#card-body {
+  background-color: #4d4d4d;
+  color: #000000;
+}
+
+#card-footer {
+  background-color: #000000;
+}
