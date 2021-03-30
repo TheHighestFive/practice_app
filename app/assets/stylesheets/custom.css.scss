@@ -17,22 +17,30 @@
 
 #home-container {
   margin-top: 25px;
-  background-color: grey;
 }
 
 #first_pic {
   background-image: asset-url('lightning.jpg');
-  height: 533px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #second_pic {
   background-image: asset-url('trees.jpg');
-  height: 533px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #third_pic {
   background-image: asset-url('ship.png');
-  height: 533px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 html,
@@ -42,7 +50,7 @@ body {
 
 #page-content {
   flex: 1 0 auto;
-  background-color: grey;
+  background-color: #272727;
 }
 
 #sticky-footer {
