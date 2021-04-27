@@ -1,7 +1,11 @@
 <h1 class="text-center mt-4 text-white">All articles</h1>
 
-<div class="sticky-top text-center">
-  <%= link_to 'Create New Article', new_article_path, class: "btn btn-primary" %>
+<div class="flickr_pagination">
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 </div>
 
 <%= render 'article' %>
+
+<div class="flickr_pagination">
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+</div>
