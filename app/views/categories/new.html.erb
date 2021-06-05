@@ -2,22 +2,9 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-10">
-      <%= render 'shared/errors', obj: @category %>
-      <%= form_with(model: @category, class: "shadow p-3 mb-4 bg-primary rounded", local: true) do |f| %>
-        <div class="mb-3 row">
-          <%= f.label :name, "Category", class: "col-2 col-form-label" %>
-          <div class="col-10">
-            <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Enter a name" %>
-          </div>
-        </div>
-
-        <div class="mb-3 text-center">
-          <%= f.submit class: "btn btn-dark btn-lg"%>
-        </div>
-
-      <% end %>
+      <%= render 'new_form' %>
     </div>
 
-    <%= link_to '[ Cancel and return to users listing ]', users_path, class: "text-primary text-center" %>
+    <%= link_to '[ Cancel and return to categories listing ]', categories_path, class: "text-primary text-center" %>
   </div>
 </div>

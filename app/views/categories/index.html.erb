@@ -10,7 +10,9 @@
     <div class="col-4 mt-4">
       <div class="card text-center shadow p-0 mb-5 bg-dark rounded">
         <div class="card-body", id= "card-body">
-          <h5 class="card-title"><%= link_to category.name, category_path(category), class: "text-success fw-bold" %></h5>
+          <h5 class="card-title"><%= link_to category.name, category_path(category), class: "text-decoration-none text-reset fw-bold" %></h5>
+          <hr>
+          <%= pluralize(category.articles.count, "article") %>
         </div>
         <div class="card-footer text-muted", id= "card-footer">
           <small>Created <%= time_ago_in_words(category.created_at) %> ago,

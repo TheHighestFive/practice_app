@@ -4,9 +4,14 @@
   <div class="row justify-content-md-center">
     <div class="col-8 mt-4">
       <div class="card text-center shadow p-0 mb-5 bg-dark rounded">
-        <div class="card-header bg-success">
+        <div class="card-header", id= "card_header">
           by <%= @article.user.username if @article.user %>
           <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+          <% if @article.categories.any? %>
+            <div class="mt-2">
+              <%= render @article.categories %>
+            </div>
+          <% end %>
         </div>
         <div class="card-body", id="card-body">
           <div class="card-text text-start"><%= simple_format(@article.description) %></div>
@@ -15,7 +20,7 @@
             <%= link_to "Delete", article_path(@article), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
           <% end %>
         </div>
-        <div class="card-footer text-black bg-success">
+        <div class="card-footer", id= "card_footer">
           <small>Created <%= time_ago_in_words(@article.created_at) %> ago,
             edited <%= time_ago_in_words(@article.updated_at) %> ago</small>
         </div>

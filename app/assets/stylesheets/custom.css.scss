@@ -50,7 +50,7 @@ body {
 
 #page-content {
   flex: 1 0 auto;
-  background-color: #272727;
+  background-color: #1e1e1e;
 }
 
 #sticky-footer {
@@ -76,6 +76,16 @@ body {
   background-color: purple;
   border-radius: 3px;
   color: black;
+}
+
+#card_header {
+  color: white;
+  background-color: #2a2a2a
+}
+
+#card_footer {
+  color: white;
+  background-color: #2a2a2a;
 }
 
 #about_body {
